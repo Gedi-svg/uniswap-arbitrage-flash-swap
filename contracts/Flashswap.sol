@@ -76,9 +76,9 @@ contract Flashswap {
             amountOut // the amount we get from our input "_amountTokenPay"; example: BUSD amount
         );
     }
-
+                //amountToken stands to obtain an amount of token that you exchanged
     function execute(address _sender, uint256 _amount0, uint256 _amount1, bytes calldata _data) internal {
-        // obtain an amount of token that you exchanged
+        
         uint256 amountToken = _amount0 == 0 ? _amount1 : _amount0;
 
         IUniswapV2Pair iUniswapV2Pair = IUniswapV2Pair(msg.sender);

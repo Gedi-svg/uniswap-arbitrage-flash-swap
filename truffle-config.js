@@ -72,7 +72,7 @@ module.exports = {
     mainnet: {
       provider: () => new HDWalletProvider(
         'YOUR KEY',
-          'http://127.0.0.1:8545/'
+          'https://bsc-dataseed.binance.org:8545/'
       ),
       network_id: 56
     },
@@ -80,7 +80,7 @@ module.exports = {
     forknet: {
       provider: () => new HDWalletProvider(
           'YOUR KEY',
-          'http://127.0.0.1:8545/'
+          'https://bsc-dataseed.binance.org:8545/'
       ),
       network_id: 56
     },
